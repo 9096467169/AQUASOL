@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - AQUASOL</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5fff5; /* Light green background */
+            color: #333; /* Dark text */
+            font-family: Arial, sans-serif;
+        }
+        .faq-header {
+            background-color: #c8e6c9; /* Soft green */
+            padding: 60px 0;
+            color: #333;
+            text-align: center;
+        }
+        .faq-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .faq-section {
+            padding: 50px 0;
+            background-color: white;
+        }
+        .accordion-button {
+            background-color: #c8e6c9; /* Soft green */
+            color: #333; /* Black text */
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #a5d6a7; /* Slightly darker green */
+            color: #333;
+        }
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #c8e6c9; /* Soft green border for clean separation */
+        }
+        .accordion-body {
+            background-color: #f5fff5; /* Light green background */
+            font-size: 1rem;
+            color: #666; /* Grey text */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- FAQ Header -->
+<section class="faq-header">
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p class="mt-3">Find answers to common questions about AQUASOL and how it works.</p>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What is AQUASOL?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AQUASOL is a solar-powered water purification system designed to provide clean and safe water to rural and agricultural communities. 
+                        It utilizes renewable solar energy along with advanced filtration technologies to ensure water quality.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How does AQUASOL work?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AQUASOL uses solar energy to power its filtration system, which purifies water by removing contaminants and harmful bacteria. 
+                        It is designed to work in remote areas where access to clean water is a challenge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Is AQUASOL easy to install?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AQUASOL has been designed with simplicity in mind. The system comes with clear instructions and requires minimal technical knowledge to set up.
+                        It can be installed in various environments, including farms and rural households.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Can AQUASOL be used for agricultural purposes?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely! AQUASOL helps provide clean water for irrigation, ensuring better crop yields. It is also beneficial for livestock, 
+                        providing safe drinking water and improving animal health.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What maintenance does AQUASOL require?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AQUASOL requires very low maintenance. The solar panels should be kept clean to ensure optimal performance, 
+                        and the filtration system may need to be replaced periodically depending on water usage.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Where can I purchase AQUASOL?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AQUASOL is available through our official website and authorized distributors. You can contact us for more information or visit our <a href="../booking/booking.html">Booking Page</a> to place an order.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2023 AQUASOL. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

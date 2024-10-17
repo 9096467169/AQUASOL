@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f4f4f4; /* Light grey background for soft contrast */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #006400; /* Darker green for a bold look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700 !important; /* Golden hover effect */
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Header Section */
+.header-image {
+    background: linear-gradient(to right, #006400, #008000); /* Gradient green */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 5px solid #000; /* Bold black border for contrast */
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #f0f0f0; /* Softer white for secondary text */
+}
+
+/* Product Cards */
+.product-card {
+    background-color: #ffffff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Soft rounded edges */
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 128, 0, 0.2); /* Smooth shadow effect */
+}
+
+.card-img-top {
+    border-bottom: 3px solid #006400; /* Green border under image */
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-title {
+    color: #006400;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.card-text {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+/* Buttons Section */
+.btn-outline-primary {
+    border-color: #006400;
+    color: #006400;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #006400;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #008000;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+.btn-primary a {
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #006400;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: #006400;
+    color: white;
+}
+
+.modal-footer .btn-primary {
+    background-color: #000000;
+    border: none;
+    font-weight: bold;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #006400;
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid black;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>Payment Gateway</h2>
+        <form action="#" method="POST">
+            <!-- Select Payment Method -->
+            <div class="payment-methods">
+                <label>
+                    <input type="radio" name="payment-method" value="credit-card" checked>
+                    <span>Credit/Debit Card</span>
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="paypal">
+                    <span>PayPal</span>
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="upi">
+                    <span>UPI</span>
+                </label>
+            </div>
+
+            <!-- Credit Card Information -->
+            <div class="credit-card-info payment-info">
+                <h3>Credit/Debit Card Details</h3>
+                <input type="text" placeholder="Cardholder Name" required>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="MM/YY" required>
+                <input type="text" placeholder="CVV" required>
+            </div>
+
+            <!-- PayPal Information -->
+            <div class="paypal-info payment-info">
+                <h3>Pay with PayPal</h3>
+                <input type="email" placeholder="PayPal Email" required>
+            </div>
+
+            <!-- UPI Information -->
+            <div class="upi-info payment-info">
+                <h3>Pay with UPI</h3>
+                <input type="text" placeholder="UPI ID" required>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+
+</body>
+</html>
