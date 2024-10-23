@@ -103,7 +103,6 @@ button[type="submit"]:hover {
 
 /* Navbar settings */
 .navbar {
-    background: linear-gradient(90deg, #007bff 0%, #00c8ff 100%);
     padding: 12px 25px;
     display: flex;
     justify-content: flex-start;

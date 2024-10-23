@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-/* Floating animation */
+/* Floating animation
 @keyframes float {
     0% {
         transform: translatey(0px);
@@ -24,7 +24,7 @@ body {
     100% {
         transform: translatey(0px);
     }
-}
+} */
 
 /* Navbar */
 .navbar {

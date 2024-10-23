@@ -144,3 +144,11 @@
   .sdg-content h2{
     color:#26bc08;
   }
+  .logo img{
+    height: 95px;
+    width: 95px;
+    box-sizing: border-box;
+    position: absolute;
+    left:135px;
+    top:0px;
+  }

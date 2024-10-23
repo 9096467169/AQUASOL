@@ -17,6 +17,9 @@ function showPaymentInfo() {
         upiInfo.style.display = 'block';
     }
 }
+document.querySelector(".payment").addEventListener("click",  ()=>{
+    alert("Payment was Successful!");
+});
 
 // Add event listeners to the radio buttons
 paymentMethods.forEach(method => method.addEventListener('change', showPaymentInfo));
