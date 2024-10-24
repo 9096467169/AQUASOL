@@ -12,12 +12,15 @@ app.use(express.static(__dirname + '/AQUASOL/Login_Signup'));
 // var userName="";
 
 function checkpass(req,res,next){
+   
     const Pass = req.body["password"];
     if (Pass === "darren123") {
         req.userIsAuthorised = true; 
       } else {
         req.userIsAuthorised = false; 
+        console.log("Password received:", Pass);
       }
+    console.log("Password received:", Pass);
     next();
   }
   app.use(checkpass);
@@ -38,7 +41,9 @@ function checkpass(req,res,next){
 app.post("/check",(req,res)=>{
   if(req.userIsAuthorised){
     res.sendFile(__dirname + "/AQUASOL/index.html");
-    // res.send(<h1> Hello </h1><h3>${userName}!</h3>);
+    app.use(express.static(__dirname + '/AQUASOL'));
+    app.use(express.static(__dirname + '/aquasol design.png'));
+    //  res.send(<h1> Hello </h1><h3>${userName}!</h3>);
 }
 else{
     res.sendFile(__dirname + "/AQUASOL/Login_Signup/login.html");
