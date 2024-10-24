@@ -35,30 +35,30 @@
         <form id="recommendationForm" class="row g-3">
             <!-- Budget Dropdown -->
             <div class="col-md-6">
-                <label for="budget" class="form-label">Select Your Budget Range (USD)</label>
+                <label for="budget" class="form-label">Select Your Budget Range (₹)</label>
                 <select id="budget" class="form-select" required>
                     <option value="" selected disabled>Select your budget</option>
-                    <option value="1500">Up to $1,500</option>
-                    <option value="2500">Up to $2,500</option>
-                    <option value="5000">Up to $5,000</option>
+                    <option value="1500">Up to ₹1,50,000</option>
+                    <option value="2500">Up to ₹2,500</option>
+                    <option value="5000">Up to ₹5,000</option>
                 </select>
             </div>
 
             <!-- Water Requirement Radio Buttons -->
             <div class="col-md-6">
-                <label for="litres" class="form-label">Daily Water Requirement (Liters)</label>
+                <label for="litres" class="form-label">Daily Water Requirement (LPH)</label>
                 <div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="litres" id="litres1000" value="1000" required>
-                        <label class="form-check-label" for="litres1000">Up to 1000 liters/day</label>
+                        <label class="form-check-label" for="litres1000">Up to 1000 liters/hour</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="litres" id="litres2000" value="2000">
-                        <label class="form-check-label" for="litres2000">Up to 2000 liters/day</label>
+                        <label class="form-check-label" for="litres2000">Up to 2000 liters/hour</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="litres" id="litres5000" value="5000">
-                        <label class="form-check-label" for="litres5000">Up to 5000 liters/day</label>
+                        <label class="form-check-label" for="litres5000">Up to 5000 liters/hour</label>
                     </div>
                 </div>
             </div>
@@ -98,9 +98,9 @@
             // Product Data
             const systems = [
                 {
-                    name: 'Company 1 - Solar Water Purifier',
+                    name: 'Company 1 -Thermax Eflo',
                     capacity: 1000,
-                    price: 1500,
+                    price: 150000 ,
                     description: 'This system uses advanced filtration and solar technology to ensure clean drinking water in rural areas.',
                     detailsLink: 'product1.html'
                 },

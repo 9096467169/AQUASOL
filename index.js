@@ -18,9 +18,8 @@ function checkpass(req,res,next){
         req.userIsAuthorised = true; 
       } else {
         req.userIsAuthorised = false; 
-        console.log("Password received:", Pass);
       }
-    console.log("Password received:", Pass);
+    
     next();
   }
   app.use(checkpass);
@@ -42,7 +41,6 @@ app.post("/check",(req,res)=>{
   if(req.userIsAuthorised){
     res.sendFile(__dirname + "/AQUASOL/index.html");
     app.use(express.static(__dirname + '/AQUASOL'));
-    app.use(express.static(__dirname + '/aquasol design.png'));
     //  res.send(<h1> Hello </h1><h3>${userName}!</h3>);
 }
 else{
